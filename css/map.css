@@ -1,0 +1,145 @@
+
+.playerIcon, .multiPlayerIcon, .npcIcon{
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	top: 25%;
+	left: 25%;
+	z-index: 3;
+	/*border: 1px solid black;*/
+	background-image: url(images/Emblem-person-blue.svg);
+	background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	font-size: 10px;
+	border-radius: 25%;
+}
+
+.multiPlayerIcon {
+	background-image: url(images/System-users.svg);
+}
+
+.multiPlayerIcon.multi, .playerIcon.multi {
+	left: 0%;
+}
+
+.npcIcon.multi {
+	left: 50%;
+}
+.npcIcon {
+	background-image: url(images/Face-devil-grin.svg);
+}
+
+
+/*.playerIcon div {
+	position: absolute;
+	top: 50%;
+	height: 2em;
+	margin-top: -1em;
+}*/
+
+.mapSquare {
+	cursor: pointer;
+	position: absolute;
+	background: DarkGoldenRod ;
+	display: inline;
+	border: 1px solid black;
+	margin: -1px -1px -1px -1px;
+}
+.mapSquare.x2.y2 {
+	border: 2px solid lime;
+	margin: -2px -2px -2px -2px;
+	z-index: 1;
+}
+
+.mapSquare .tileFilter {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: none;
+	z-index: 2;
+}
+.mapSquare.outOfBounds_aboveground_1 .tileFilter {
+	background: MidnightBlue;
+	opacity: 0.5;
+}
+.mapSquare.outOfBounds_aboveground_2 .tileFilter {
+	background: MidnightBlue;
+	opacity: 0.7;
+}
+.mapSquare.outOfBounds_underground .tileFilter {
+	background: Black;
+	opacity: 0.7;	
+}
+.mapSquare.ground { background: DarkKhaki;}
+
+.inner {
+	position: absolute;
+	display: none;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+	bottom: 10%;
+	height: 80%;
+	width: 80%;
+}
+.inner.nw, .inner.n, .inner.ne {
+	top: 0;
+	bottom: 10%; 
+	height: 10%;
+}
+.inner.sw, .inner.s, .inner.se {
+	top: 90%;
+	bottom: 100%;
+	height: 10%;
+}
+.inner.nw, .inner.w, .inner.sw  {
+	left: 0;
+	right: 10%; 
+	width: 10%;
+}
+.inner.ne, .inner.e, .inner.se {
+	left: 90%;
+	right: 100%;
+	width: 10%;
+}
+
+.mapSquare.nw .inner.nw { display: inline; }
+.mapSquare.n .inner.n { display: inline; }
+.mapSquare.ne .inner.ne { display: inline; }
+.mapSquare.w .inner.w { display: inline; }
+.mapSquare.inner.center { display: inline;}
+.mapSquare.e .inner.e { display: inline; }
+.mapSquare.sw .inner.sw { display: inline; }
+.mapSquare.s .inner.s { display: inline; }
+.mapSquare.se .inner.se { display: inline; }
+
+.curve_sw .inner.center {
+	border-bottom-left-radius: 50%;
+}
+.curve_nw .inner.center {
+	border-top-left-radius: 50%;
+}
+.curve_se .inner.center {
+	border-bottom-right-radius: 50%;
+}
+.curve_ne .inner.center {
+	border-top-right-radius: 50%;
+}
+
+.road .inner.center { display: inline;}
+.road .inner { background: DimGray;}
+
+.lake .inner.center { display: inline;}
+.lake .inner { background: blue;}
+
+
+.building .inner.center { display: inline;}
+.building .inner { background: brown;}
+
+.tree .inner.center {
+	display: inline;
+	background: ForestGreen;
+	border-radius: 50%;
+}
+

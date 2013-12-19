@@ -1,0 +1,87 @@
+.button {
+	border: 1px solid black;
+	background: gray;
+}
+#mapWrapper{
+	position: absolute;
+	top: 20%;
+	bottom: 0;
+	height: auto;
+	left: 0;
+	width: 50%;
+	
+}
+#map{
+	position: absolute;
+	left: 35px;
+	right: 35px;
+	top: 35px;
+	bottom: 35px;
+	height: auto;
+	width: auto;
+}
+#navLeft {
+	position: absolute;
+	left:0px;
+	width:35px;
+	bottom:35px;
+	top:35px;
+}
+#navRight {
+	position: absolute;
+	width:35px;
+	right:0px;
+	bottom:35px;
+	top:35px;
+}
+#navUp {
+	position: absolute;
+	left:35px;
+	right:35px;
+	top:0px;
+	height:35px;
+	text-align: center;
+}
+#navLeft div {
+	position: absolute;
+	top: 50%;
+	margin-top: -35px ;
+}
+#navDown{
+	position: absolute;
+	left:35px;
+	right:35px;
+	bottom:0px;
+	height:35px;
+	text-align: center;
+}
+#navRight div {
+	position: absolute;
+	top: 50%;
+	margin-top: -35px ;
+}
+.mapSquare.x2.y2 {
+	border: 1px solid black;/*2px solid lime;*/
+	margin: -1px -1px -1px -1px;
+	z-index: auto;/*1;*/
+}
+.mapSquare.activeSquare {
+	border: 2px solid lime!important;
+	margin: -2px -2px -2px -2px!important;
+	z-index: 1!important;
+}
+
+#tileDesc{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	right: 30%;
+	bottom: 0px;
+}
+#tileAddItems{
+	position: absolute;
+	top: 20%;
+	left: 70%;
+	right: 0;
+	bottom: 0px;
+}

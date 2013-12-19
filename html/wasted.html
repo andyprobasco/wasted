@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Wasted</title>
+	<link rel="stylesheet" href="wasted/css/jquery-ui-1.8.21.custom.css"/>
+	<link rel="stylesheet" href="wasted/css/irkGame.css"/>
+	<link rel="stylesheet" href="wasted/css/map.css"/>
+</head>
+<body>
+	<div id="messageLog"></div>
+	<div id="mapWrapper"><div id="map">map</div></div>
+	<div id="desc">desc</div>
+	<div id="inventory">inventory</div>
+	<div id="stats">
+		<div id="currentStatus">
+			<div id="apBar"><div class="ui-progressbar-label"></div></div>
+			<div id="hpBar"><div class="ui-progressbar-label"></div></div>
+			<div id="fpBar"><div class="ui-progressbar-label"></div></div>
+			<div id="wpBar"><div class="ui-progressbar-label"></div></div>
+			<div id="equips">weapon: hands, tool: nothing</div>
+		</div>
+		<div id="xpStats">
+			<div id="fightBar"><div class="ui-progressbar-label"></div></div>
+			<div id="buildBar"><div class="ui-progressbar-label"></div></div>
+			<div id="exploreBar"><div class="ui-progressbar-label"></div></div>
+			<button id="spendXp">Spend XP</button>
+		</div>
+	</div>
+	<div id="popup" style="display:none;"><div id="popup_close">X</div><div id="popup_text">popup!</div></div>
+	<div id="skills" style="display:none;">
+		<div id="skill_close">X</div>
+		<div id="skill_fight"></div>
+		<div id="skill_explore"></div>
+		<div id="skill_build"></div>
+	</div>
+</body>
+<script type="text/javascript" src="http://www.brassmangames.com:3030/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="wasted/js/client/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="wasted/js/client/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="wasted/js/client/client.js"></script>
+</html>
